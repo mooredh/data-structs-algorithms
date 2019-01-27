@@ -2,13 +2,11 @@
 const { LinkedList, DoublyLinkedList, CircularLinkedList } = require('./linked-list');
 
 let cities = new LinkedList();
-cities.insert("Conway", "head");
+cities.insert("Conway");
 cities.insert("Russellville", "Conway");
 cities.insert("Carlisle", "Russellville");
 cities.insert("Alma", "Carlisle");
-cities.advance(2);
-cities.back(2);
-console.log(cities.show());
+console.log(cities.find());
 cities.display();
 console.log();
 cities.remove("Carlisle");
